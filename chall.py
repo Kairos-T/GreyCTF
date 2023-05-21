@@ -23,6 +23,8 @@ def encryption(key, plaintext):
 
 print("Welcome back, NUS Dean. Please type in the authentication codes to open the vault! \n")
 
+
+
 a = int(input("Enter the first code: "))
 b = int(input("Enter the second code: "))
 
@@ -43,3 +45,5 @@ if thief_check == encryption(first_key, encryption(second_key, thief_check)):
     print(FLAG)
 else:
     print("Stealing attempts detected! Initializing lockdown")
+    
+    
